@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Talentera</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header class="header">
+        <nav class="navbar">
+          <a href="/" class="navItem homeNavItem">
+            <i class="fa fa-home" style="margin-right: 16px"></i>Logo
+          </a>
+          <a href="#team" class="navItem">Team</a>
+          <a href="#work" class="navItem">Work</a>
+          <a href="#price" class="navItem">Price</a>
+          <a href="#contact" class="navItem">Contact</a>
+          <select name="Dropdown" id="dropdown" class="navItem selectContainer">
+            <option value="">Dropdown</option>
+            <option value="1">Item1</option>
+            <option value="2">Item2</option>
+            <option value="3">Item3</option>
+          </select>
+          <i
+            class="fa fa-search"
+            style="margin: auto 10px auto auto; color: white; cursor: pointer"
+          ></i>
+        </nav>
+        <nav class="responsiveNavbar">
+          <a href="/" class="navItem homeNavItem">
+            <i class="fa fa-home" style="margin-right: 16px"></i>Logo
+          </a>
+          <i
+            class="fa fa-bars"
+            style="margin: auto 10px auto auto; color: white; cursor: pointer"
+            onclick="toggleNavMenu()"
+          ></i>
+        </nav>
+        <div id="navMenu" class="menu">
+          <a href="#team" class="navItem" onclick="toggleNavMenu()">Team</a>
+          <a href="#work" class="navItem" onclick="toggleNavMenu()">Work</a>
+          <a href="#price" class="navItem" onclick="toggleNavMenu()">Price</a>
+          <a href="#contact" class="navItem" onclick="toggleNavMenu()"
+            >Contact</a
+          >
+        </div>
+      </header>
+
+      <main>
+        <section class="imageSection">
+          <img src="/assets/images/desert.jpeg" alt="Desert" />
+          <div class="imageLabel">Talentera</div>
+        </section>
+
+        <section class="teamSection" id="team">
+          <h2>OUR TEAM</h2>
+          <p>Meet the team - our office rats:</p>
+          <div class="teamMembersContainer">
+            <div class="teamMember">
+              <div
+                class="memberImage"
+                style="background-image: url(/assets/images/person1.jpg)"
+              ></div>
+              <p>Eman Sobhi</p>
+              <p>Boss man</p>
+            </div>
+            <div class="teamMember">
+              <div
+                class="memberImage"
+                style="background-image: url(/assets/images/person2.jpg)"
+              ></div>
+              <p>Reem Yakoub</p>
+              <p>Fixer</p>
+            </div>
+            <div class="teamMember">
+              <div
+                class="memberImage"
+                style="background-image: url(/assets/images/person3.jpg)"
+              ></div>
+              <p>Islam AlZatary</p>
+              <p>Web Designer</p>
+            </div>
+            <div class="teamMember">
+              <div
+                class="memberImage"
+                style="background-image: url(/assets/images/person4.jpg)"
+              ></div>
+              <p>Tayseer Emam</p>
+              <p>Support</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="workSection" id="work">
+          <div style="align-self: start; flex: 1">
+            <h2>Our Work</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="/assets/images/work1.jpg"
+                alt="customer 1"
+                style="width: 100%; height: 180px"
+              />
+              <div class="cardItems">
+                <h3>Customer 1</h3>
+                <p>Trade</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="/assets/images/work2.jpg"
+                alt="customer 1"
+                style="width: 100%; height: 180px"
+              />
+              <div class="cardItems">
+                <h3>Customer 2</h3>
+                <p>Trade</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="/assets/images/work3.jpg"
+                alt="customer 1"
+                style="width: 100%; height: 180px"
+              />
+              <div class="cardItems">
+                <h3>Customer 3</h3>
+                <p>Trade</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+                <p>Blablablablabla</p>
+              </div>
+            </div>
+          </div>
+          <div class="plus">
+            <i class="fa fa-plus" style="padding-top: 10px"></i>
+          </div>
+        </section>
+
+        <section class="contactSection" id="contact">
+          <div style="align-self: start; display: flex; flex-direction: column">
+            <h2 style="border-bottom: 8px solid #009688; width: fit-content">
+              Contact Us
+            </h2>
+            <h3>Address</h3>
+            <p>Swing by for a cup of coffee or whatever.</p>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin-top: 16px;
+              "
+            >
+              <div>
+                <i class="fa fa-map-marker" style="color: #009688"></i> Amman,
+                Jordan
+              </div>
+              <div>
+                <i class="fa fa-phone" style="color: #009688"></i> Phone: +962
+                79 0000000
+              </div>
+              <div>
+                <i class="fa fa-envelope-o" style="color: #009688"> </i> Email:
+                test@test.com
+              </div>
+            </div>
+          </div>
+          <div class="formContainer">
+            <form action="/" target="_blank" class="inputsContainer">
+              <input
+                class="inputContainer"
+                type="text"
+                placeholder="Name"
+                required
+                name="name"
+              />
+              <div class="line"></div>
+              <input
+                class="inputContainer"
+                type="email"
+                placeholder="Email"
+                required
+                name="email"
+              />
+              <div class="line"></div>
+              <input
+                class="inputContainer"
+                type="text"
+                placeholder="Message"
+                required
+                name="message"
+              />
+              <div class="line"></div>
+              <div
+                style="
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                "
+              >
+                <div>
+                  <input type="checkbox" id="checkbox" name="like" required />
+                  <label for="checkbox">I Like it!</label>
+                </div>
+                <button class="button" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <button onclick="scrollToTop()" id="scrollButton">
+          <i class="fa fa-arrow-up" style="color: white"></i>
+        </button>
+      </main>
+      <footer class="footer">
+        <p>Follow Us</p>
+        <div class="socialIcons">
+          <i class="fa fa-facebook" style="color: white"></i>
+          <i class="fa fa-twitter" style="color: white"></i>
+          <i class="fa fa-google-plus" style="color: white"></i>
+          <i class="fa fa-instagram" style="color: white"></i>
+          <i class="fa fa-linkedin" style="color: white"></i>
+        </div>
+      </footer>
+
+      <script>
+        const scrollButton = document.getElementById("scrollButton");
+
+        window.onscroll = function () {
+          if (
+            document.body.scrollTop > 100 ||
+            document.documentElement.scrollTop > 100
+          ) {
+            scrollButton.style.display = "block";
+          } else {
+            scrollButton.style.display = "none";
+          }
+        };
+
+        function scrollToTop() {
+          document.documentElement.scrollTop = 0;
+        }
+
+        function toggleNavMenu() {
+          const x = document.getElementById("navMenu");
+          if (x.className.indexOf("showMenu") == -1) {
+            x.className += " showMenu";
+          } else {
+            x.className = x.className.replace(" showMenu", "");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

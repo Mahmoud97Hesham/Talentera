@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.main-container {
+  max-width: 1980px;
+}
+
+.header {
+  width: 100%;
+  height: 32px;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  gap: 16px;
+}
+
+#navMenu {
+  display: none;
+}
+.showMenu {
+  display: flex !important;
+}
+.menu {
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  background-color: black;
+  color: white;
+  gap: 8px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.navItem {
+  padding: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.homeNavItem {
+  background-color: #1c887b;
+}
+
+.selectContainer {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.imageSection {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.imageLabel {
+  position: absolute;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  left: 10px;
+  bottom: 10px;
+}
+
+.teamSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.teamMembersContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.teamMember > p:first-of-type {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.memberImage {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.workSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  color: white;
+  padding: 48px 10px;
+  gap: 20px;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 16px;
+  flex: 2;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+  gap: 16px;
+  background-color: white;
+  color: black;
+}
+
+.cardItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  gap: 16px;
+}
+
+.plus {
+  position: absolute;
+  right: 16px;
+  bottom: -16px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  background-color: #009688;
+  border-radius: 50%;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 60px 16px;
+}
+
+.formContainer {
+  background-color: white;
+  height: 250px;
+  width: 800px;
+  box-shadow: 1px 1px 4px 1px grey;
+  padding: 16px;
+}
+
+.inputsContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputContainer {
+  width: 100%;
+  border: none;
+  min-height: 32px;
+}
+
+.inputContainer::placeholder {
+  color: black;
+}
+
+.line {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 2px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  padding-inline: 12px;
+}
+
+.footer {
+  background-color: black;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-block: 16px;
+}
+.socialIcons {
+  display: flex;
+  gap: 8px;
+}
+.socialIcons i {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  padding: 12px 0 0 12px;
+  background-color: #009688;
+}
+
+#scrollButton {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 100;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.responsiveNavbar {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .teamMembersContainer {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .workSection {
+    flex-direction: column;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+  }
+
+  .contactSection {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .formContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    display: none;
+  }
+
+  .responsiveNavbar {
+    display: flex;
+  }
+}
